@@ -68,7 +68,7 @@ public class Test2 {
 		System.out.println(date.toString());
 		System.out.println("我是主流");
 		System.out.println("第二次修改");
-		
+		System.out.println("主流测试第二次");
 	}
 
 }
