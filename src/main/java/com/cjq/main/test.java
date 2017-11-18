@@ -10,6 +10,7 @@ public class test {
 			good.name="123";
 			System.out.println(good.name);
 			System.out.println("主干");
+			System.out.println("撤回提交");
 	}
 	
 	
