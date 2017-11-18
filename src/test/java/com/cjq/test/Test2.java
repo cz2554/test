@@ -66,7 +66,7 @@ public class Test2 {
 		
 		}
 		System.out.println(date.toString());
-		
+		System.out.println("我是主流");
 		
 	}
 
