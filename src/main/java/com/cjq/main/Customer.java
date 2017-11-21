@@ -40,7 +40,7 @@ public class Customer {
         //自动回复队列应答 -- RabbitMQ中的消息确认机制
         channel.basicConsume(QUEUE_NAME, true, consumer);
         Integer i=1;
-        
+        System.out.println("123");
     }
 }
     
