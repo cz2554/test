@@ -13,7 +13,7 @@ import java.util.LinkedList;
 public class Test2 {
 
 	static public  void main(String[] args) throws ParseException {
-	/*String a="222.0";
+	String a="222.0";
 	System.out.println(Double.valueOf(a).intValue());
 		// TODO Auto-generated method stub
 		HashSet<String> set=new HashSet<String>(4);
@@ -31,7 +31,7 @@ public class Test2 {
 			System.out.println(iter.next());
 		}
 		System.out.println(set.size());
-		*/
+		
 		LinkedList<String> list=new LinkedList<String>();
 		//list.add("15");
 
@@ -59,15 +59,33 @@ public class Test2 {
 		try {
 			Date date2=format.parse(dateStr);
 			System.out.println(date2.toString());
-		} catch (ParseException e) {
+			String dateStr1="2017/22/02";
+			dateStr1=parseDate(dateStr1);
+			System.out.println(dateStr1);
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			throw e;
-		
 		}
 		System.out.println(date.toString());
 		
 		
 	}
+    public static String parseDate(String dateStr) throws Exception {
+    	int length=dateStr.length();
+    	SimpleDateFormat   dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+    	dateFormat.setLenient(false);
 
+    	if(length==8) {
+    		dateStr=dateStr.substring(0, 4)+'/'+dateStr.substring(4,6)+"/"+dateStr.substring(6,8);
+    	}else if(length==10) {
+    		if(dateStr.indexOf("-")>0) {
+    			dateStr=dateStr.replace("-", "/");
+    		}
+    	}else {
+    		throw new Exception("日期格式错误");
+    	}
+    	dateFormat.parse(dateStr);
+
+    	return dateStr;
+    }
 }
