@@ -42,7 +42,7 @@ public class Test1 {
  System.out.println(good.name);
 //System.out.println("a"=="a");
 List list=null;
-//System.out.println(list.isEmpty());
+System.out.println(list.isEmpty());
 String a="a";
 try {
   a.equals("a");
