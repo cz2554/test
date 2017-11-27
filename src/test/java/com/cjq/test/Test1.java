@@ -40,7 +40,7 @@ public class Test1 {
 		GoodsVo good=new GoodsVo();
  good.name="123";
  System.out.println(good.name);
-System.out.println("a"=="a");
+//System.out.println("a"=="a");
 List list=null;
 System.out.println(list.isEmpty());
 String a="a";

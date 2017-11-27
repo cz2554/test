@@ -22,7 +22,7 @@ public class Test2 {
 		set.add("C");
 		set.add("A");
 		set.add("D");
-		set.add("E");
+//		set.add("E");
 		set.add("F");
 		set.add("G");
 		Iterator<String> iter=set.iterator();
