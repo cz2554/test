@@ -21,7 +21,7 @@ public class Test2 {
 		set.add("B");
 		set.add("C");
 		set.add("A");
-		set.add("D");
+//		set.add("D");
 		set.add("E");
 		set.add("F");
 		set.add("G");
